@@ -18,10 +18,9 @@ public class Game {
     boolean correct = false;
     answer = randomNumber;
 
-    System.out.println("hey, "+ name +" I'm thinking of a number between 1-100. what is it?");
+    System.out.println("hey, " + name + " I'm thinking of a number between 1-100. what is it?");
     int counter = 1;
     while (!correct) {
-
 
       // guess value
       guess = userInput.nextInt();
@@ -30,13 +29,13 @@ public class Game {
       // if guess is greater than actual
       if (guess > answer) {
         System.out.println(guess + " is too high, try again");
-        counter ++;
+        counter++;
       }
 
       // if guess is less than actual
       else if (guess < answer) {
         System.out.println(guess + " too low, try again");
-        counter ++;
+        counter++;
       }
 
       // guess is equal to actual value
@@ -46,7 +45,9 @@ public class Game {
         counter++;
         correct = true;
       }
+
     }
+
     System.exit(0);
   }
 }
